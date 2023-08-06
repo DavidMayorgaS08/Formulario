@@ -1,0 +1,54 @@
+<!--crear un formulario de registro con nombre, apellido, seleccionar el sexo (hombre o mujer), poner el correo, la poblacion y dar unas opciones en una lista desplegable(Urbana, rural, x, x ,x), una descripción y si marcar si desea recibir informacion sobre novedades y ofertas y otro de declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos y por ultimo un boton de enviar-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./formulario.css">
+</head>
+
+<body>
+
+    <div>
+        <form class="formulario">
+            <h1>Formulario de registro</h1>
+            <label for="">Nombre</label>
+            <input class="nombre" type="text"></input>
+            <br>
+            <label for="">Apellido</label>
+            <input class="apellido" type="text"></input>
+            <br>
+            <label class="sexo" for="">Sexo:</label>
+            <input class="sexoH" type="radio">Hombre</input>
+            <input class="sexoM" type="radio">Mujer</input>
+            <br>
+            <label for="">Correo</label>
+            <input class="correo" type="email"></input>
+            <br>
+            <label for="">Poblacion</label>
+            <select class="poblacion">
+                <option value="urbana">x</option>
+                <option value="rural">x</option>
+                <option value="x">x</option>
+                <option value="x">x</option>
+                <option value="x">x</option>
+            </select>
+            <br>   
+            <label for="">Descripcion</label>
+            <textarea class="descripcion" cols="40"></textarea>
+            <br>
+            <input class="condiciones" type="checkbox"></input>
+            <label class="TextoCond" for="">Recibir informacion sobre novedades y ofertas</label>
+            <br>
+            <input class="condiciones" type="checkbox"></input>
+            <label class="TextoCond" for="">Declaro haber leido yaceptar las condiciones generales del programa y lanormativa sobre protección de datos</label>
+            <br>
+            <button class="enviar">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>
